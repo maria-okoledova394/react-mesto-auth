@@ -1,0 +1,11 @@
+.popup__title_function_edit {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 677px) {
+    .popup__title_function_edit {
+        width: 238px;
+        margin-bottom: 45px;
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,6 @@
+.elements__element {
+    position: relative;
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+}

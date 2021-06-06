@@ -1,0 +1,13 @@
+.elements__like-button_status_notactive {
+    background-image: url(../../../../images/like-white.svg);
+}
+
+.elements__like-button_status_notactive:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.elements__like-button_status_notactive:active {
+    background-image: url(../../../../images/like-black.svg);
+    opacity: 1;
+}
