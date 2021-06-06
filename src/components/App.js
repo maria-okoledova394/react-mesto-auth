@@ -41,7 +41,7 @@ function App() {
   }
 
   function checkToken() {
-    let token = localStorage.getItem('token')
+    const token = localStorage.getItem('token')
     
     if (token) {
       auth.getContent(token)
@@ -81,7 +81,7 @@ function App() {
   return (
     <div className="page">
     <Switch>
-      {popup && <InfoTooltip isMistake={isMistake} onClose={onCloseStartPopup} />}
+      {popup && <InfoTooltip isMistake={isMistake} isOpen={popup} onClose={onCloseStartPopup}/>}
       <Route path="/sign-up">
         <Register onRegister={onRegister} />
       </Route>

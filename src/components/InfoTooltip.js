@@ -5,7 +5,7 @@ import faild_registration_mark from '../images/faild_registration_mark.svg'
 function InfoTooltip(props) {
     return (
       <>
-        <div className="start-popup">
+        <div className={`popup ${props.isOpen ? "popup_opened" : ""}`}>
           <form className="popup__form popup__container popup__container_type_info">
             <button className="popup__close-button" type="button" onClick={props.onClose}></button>
             <img className="popup__image" src={props.isMistake ? faild_registration_mark : success_registration_mark}
