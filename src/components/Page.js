@@ -131,7 +131,7 @@ function Page(props) {
     return (
         <CurrentUserContext.Provider value={currentUser}>
         <>
-            <Header onSignOut={props.onSignOut} email={props.email}/>
+            <Header onSignOut={props.onSignOut} email={props.email} loggedIn={true} nameLink="Выйти" way="" />
             <Main onEditProfile={handleEditProfileClick} cards={cards} onCardLike={handleCardLike} onCardDelete={handleCardDelete} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick}/>
             <Footer />
             <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />

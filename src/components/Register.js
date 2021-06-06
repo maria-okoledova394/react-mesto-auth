@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import Header from './Header.js';
 
 function Register(props) {
 
@@ -27,10 +28,7 @@ function Register(props) {
 
   return (
       <>
-      <header className="header">
-        <div className="header__logo"></div>
-        <Link to="/sign-in" className="header__link">Войти</Link>
-      </header> 
+      <Header onSignOut={props.onSignOut} email={props.email} loggedIn={false} nameLink="Войти" way="/sign-in" />
       <form className="start-form" onSubmit={handleSubmit}>
         <h1 className="start-form__title">Регистрация</h1>
           <input id="email-input" name="email" className="start-form__input" placeholder="Email" 

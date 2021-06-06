@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import Header from './Header.js';
 
 function Login(props) {
 
@@ -29,10 +29,7 @@ function Login(props) {
 
     return (
         <>
-        <header className="header">
-            <div className="header__logo"></div>
-            <Link to="/sign-up" className="header__link">Регистрация</Link>
-        </header>    
+        <Header onSignOut={props.onSignOut} email={props.email} loggedIn={false} nameLink="Регистрация" way="/sign-up" />
         <form className="start-form" onSubmit={handleSubmit}>
           <h1 className="start-form__title">Вход</h1>
             <input id="email-input" name="email" className="start-form__input" placeholder="Email" 
